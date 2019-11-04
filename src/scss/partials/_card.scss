@@ -1,11 +1,8 @@
 .card-element {
-  display: flex;
-  flex-wrap: wrap;
   border: 1px solid white;
   border-radius: 20px;
   margin: 10%;
-  justify-content: flex-start;
-  max-height: 222px;
+  max-height: 230px;
 
   &__headline {
     width: 100%;
@@ -15,12 +12,22 @@
     color: $color-fourth;
     border-radius: 20px 20px 0 0;
     > h2 {
-      margin: 3px;
+      margin: 0px;
+      padding: 8px;
     }
   }
-
+  &__main {
+    display: flex;
+  }
   &__img {
-    width: 30%;
+    max-height: 180px;
+    max-width: 30%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top center;
+    & img {
+      width: 100%;
+    }
   }
   &__content {
     width: 60%;
