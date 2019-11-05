@@ -1,4 +1,20 @@
 footer {
-  grid-row: 3 / 4;
-  background: chartreuse;
+  // grid-row: 3 / 4;
+  background: $color-third;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  // position: absolute;
+  // bottom: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+}
+button {
+  background: $color-third;
+  outline: none;
+  border: none;
+  height: 100%;
 }
