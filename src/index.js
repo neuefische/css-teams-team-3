@@ -18,6 +18,7 @@ const vegetables = [
     description: "Lorem Lorem Lorem Lorem Lorem"
   }
 ];
+const container = document.querySelector(".container");
 
 vegetables.forEach(function(result) {
   const content = `
@@ -42,9 +43,6 @@ vegetables.forEach(function(result) {
     </div>
   </div>
   `;
-  // const cardContent = document.createElement("div");
-  // cardContent.innerHTML = content.toString();
-  // return cardContent;
-  return content;
+
+  container.innerHTML += content;
 });
-console.log(content);
