@@ -28,11 +28,3 @@ vegetables.forEach(function(result) {
 
   container.innerHTML += content;
 });
-
-function findVeg(veg) {
-  return veg.name === location;
-}
-function getSingleVeg() {
-  console.log(vegetables.find(findVeg));
-}
-getSingleVeg();
