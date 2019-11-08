@@ -42,5 +42,9 @@ vegetables.forEach(function(result) {
     </div>
   </div>
   `;
-  console.log(content);
+  // const cardContent = document.createElement("div");
+  // cardContent.innerHTML = content.toString();
+  // return cardContent;
+  return content;
 });
+console.log(content);
