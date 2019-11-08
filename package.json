@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html -p 4545",
     "build": "parcel build src/*.html",
     "test": "jest",
     "test-watch": "jest --watch"
