@@ -46,3 +46,42 @@ vegetables.forEach(function(result) {
 
   container.innerHTML += content;
 });
+
+// let x = 1;
+const testConst = vegetables[1];
+
+console.log(testConst.name);
+
+// vegetables[0](function(detail) {
+//   const detailContent = `
+
+//   <div class="details-container">
+//         <div class="details-container__img">
+//           <img
+//             src="${detail.pic}"
+//             alt="${detail.name}"
+//           />
+//         </div>
+//         <div class="details-container__description">
+//           ${detail.description}
+//         </div>
+//       </div>
+//       <div class="info-box">
+//         <ul>
+//           <li>Season: <span>may - june</span></li>
+//           <li>Vitamin: <span>A, C, E</span></li>
+//           <li>
+//             Favorite recipe:
+//             <span
+//               ><a
+//                 href="https://www.chefkoch.de/rezepte/3059651458565990/Brokkoli-aus-der-Pfanne.html"
+//                 >broccoli a la plancha</a
+//               ></span
+//             >
+//           </li>
+//           <li>origin: <span>anatolia</span></li>
+//         </ul>
+//       </div>
+//       `;
+//   console.log(detailContent);
+// });
