@@ -21,31 +21,72 @@ const vegetables = [
       "Broccoli is an edible green plant in the cabbage family (family Brassicaceae, genus Brassica) whose large flowering head and stalk is eaten as a vegetable. The word broccoli comes from the Italian plural of broccolo."
   }
 ];
+
 const container = document.querySelector(".container");
 
-vegetables.forEach(function(result) {
+// creates a card, expects to receive an object, internallz referred to as "vegetable"
+function createCard(vegetable) {
   const content = `
   <div class="card-element">
     <div class="card-element__headline">
-      <h2>${result.name}</h2>
+      <h2>${vegetable.name}</h2>
     </div>
     <div class="card-element__main">
       <div class="card-element__img">
         <img
-          src="${result.pic}"
-          alt="${result.name}"
+          src="${vegetable.pic}"
+          alt="${vegetable.name}"
         />
       </div>
 
       <div class="card-element__content">
         <p>
-          ${result.description}
+          ${vegetable.description}
         </p>
         <button><a href="/details.html">details</a></button>
       </div>
     </div>
   </div>
   `;
-
+  // search for append on MDN for an alternative
   container.innerHTML += content;
+}
+
+// calls createCard and passes an object for each entry (or object) in the array
+vegetables.forEach(vegetable => createCard(vegetable));
+
+// let x = 1;
+const testConst = vegetables[1];
+vegetables[0](function(detail) {
+  const detailContent = `
+
+  <div class="details-container">
+        <div class="details-container__img">
+          <img
+            src="${testcont.pic}"
+            alt="${detail.name}"
+          />
+        </div>
+        <div class="details-container__description">
+          ${detail.description}
+        </div>
+      </div>
+      <div class="info-box">
+        <ul>
+          <li>Season: <span>may - june</span></li>
+          <li>Vitamin: <span>A, C, E</span></li>
+          <li>
+            Favorite recipe:
+            <span
+              ><a
+                href="https://www.chefkoch.de/rezepte/3059651458565990/Brokkoli-aus-der-Pfanne.html"
+                >broccoli a la plancha</a
+              ></span
+            >
+          </li>
+          <li>origin: <span>anatolia</span></li>
+        </ul>
+      </div>
+      `;
+  console.log(detailContent);
 });
