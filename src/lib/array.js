@@ -22,5 +22,30 @@ export const vegetables = [
     description:
       "Broccoli is an edible green plant in the cabbage family (family Brassicaceae, genus Brassica) whose large flowering head and stalk is eaten as a vegetable. The word broccoli comes from the Italian plural of broccolo.",
     location: "?Broccoli"
+  },
+
+  {
+    name: "Zucchini",
+    pic:
+      "https://s14-eu5.startpage.com/cgi-bin/serveimage?url=https%3A%2F%2Ffoodrevolution.org%2Fwp-content%2Fuploads%2Fblog-featured-zuch1-20180724.jpg&sp=f1f439893b0ed2ece00c6975fe39ff7c&anticache=336997",
+    description:
+      "The zucchini or courgette is a summer squash, of Mesoamerican origin, which can reach nearly 1 m (100 cm; 39 in) in length, but is usually harvested when still immature at about 15 to 25 cm (6 to 10 in).",
+    location: "?Zucchini"
+  },
+  {
+    name: "Kale",
+    pic:
+      "https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    description:
+      "Kale or leaf cabbage is one of certain cultivars of cabbage grown for their edible leaves, although some are used as ornamentals. Kale plants have green or purple leaves, and the central leaves do not form a head (as with headed cabbage)",
+    location: "?Kale"
+  },
+  {
+    name: "Hala Aka Puhala",
+    pic:
+      "https://static.boredpanda.com/blog/wp-content/uploads/2015/01/fruits0023__700.jpg",
+    description:
+      "Pandanus tectorius is a species of Pandanus (screwpine) that is native to Malesia, eastern Australia, and the Pacific Islands. It grows in the coastal lowlands typically near the edge of the ocean.",
+    location: "?Hala%20Aka%20Puhala"
   }
 ];
